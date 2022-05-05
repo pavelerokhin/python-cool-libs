@@ -1,6 +1,5 @@
 import spacy
-# spacy.load('en_core_web_sm')
-# from spacy.lang.en import English
+
 
 nlp = spacy.load('en_core_web_sm')
 with open("./wiki_us.txt", "r") as f:
@@ -51,7 +50,6 @@ for token in doc[:20]:
 
 
 # vord vectors in spacy
-
 text = "Mike enjoys playing football."
 doc2 = nlp(text)
 print(doc2)
